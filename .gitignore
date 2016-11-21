@@ -1,3 +1,6 @@
+*
+!*/
+!*.*
 *.layout
 *.exe
 *.o
@@ -8,6 +11,4 @@ Package/*
 Package
 SetupProgram
 SetupProgram/*
-.*
-*~
-!*.*
+
