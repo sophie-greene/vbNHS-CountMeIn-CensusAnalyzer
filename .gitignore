@@ -4,7 +4,6 @@
 *.layout
 *.exe
 *.o
-*.pdf
 Pckage
 Pckage/*
 Package/*
