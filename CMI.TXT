@@ -1,0 +1,3 @@
+Copied C:\Users\Somoud\Documents\CMI-F\CMI-Program\Package\setup.exe to C:\Users\Somoud\Desktop
+Copied C:\Users\Somoud\Documents\CMI-F\CMI-Program\Package\SETUP.LST to C:\Users\Somoud\Desktop
+Copied C:\Users\Somoud\Documents\CMI-F\CMI-Program\Package\DashboardAnalysis.CAB to C:\Users\Somoud\Desktop

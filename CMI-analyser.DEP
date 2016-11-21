@@ -1,0 +1,23 @@
+[Version]
+Version=1.0.0.0
+
+[CMI-analyser.exe <0009>]
+Dest=$(AppPath)
+Date=12/07/2009
+Time=19:28
+Version=1.0.0.0
+CABFilename=CMI-analyser.CAB
+CABINFFile=CMI-analyser.INF
+Uses1=msvbvm60.dll
+Uses2=oleaut32.dll
+Uses3=olepro32.dll
+Uses4=asycfilt.dll
+Uses5=stdole2.tlb
+Uses6=COMCAT.DLL
+Uses7=EXCEL.EXE
+Uses8=FM20.DLL
+Uses9=COMDLG32.OCX
+Uses10=MSCOMCTL.OCX
+Uses11=ieframe.dll
+Uses12=analysis.xls
+Uses13=files.xls

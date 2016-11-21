@@ -1,0 +1,107 @@
+[Root]
+Most Recent Package=Standard Setup Package 1
+Most Recent Deploy=Folder Deployment 1
+
+
+[Package|Standard Setup Package 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Users\Touchstone\Desktop\CMI-Program - Copy\Package
+
+[Package|Standard Setup Package 1|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 1|Files Found]
+
+[Package|Standard Setup Package 1|Files Released]
+
+[Package|Standard Setup Package 1|Missing Dependency Information]
+C:\Program Files\Microsoft Office\Office12\EXCEL.EXE=
+
+[Package|Standard Setup Package 1|Out-of-Date Dependency Information]
+C:\Windows\System32\ComDlg32.OCX=
+C:\Windows\System32\mscomctl.OCX=
+
+[Package|Standard Setup Package 1|Files Added]
+C:\Users\Touchstone\Desktop\CMI-Program - Copy\agregateData.xls=
+
+[Package|Standard Setup Package 1|Files Removed]
+c:\program files\microsoft office\office12\excel.exe=
+
+[Package|Standard Setup Package 1|Files In Project]
+C:\Users\Touchstone\Desktop\CMI-Program - Copy\CMI.exe=Yes
+C:\Windows\System32\msvbvm60.dll=Yes
+C:\Windows\System32\oleaut32.dll=Yes
+C:\Windows\System32\olepro32.dll=Yes
+C:\Windows\System32\asycfilt.dll=Yes
+C:\Windows\System32\stdole2.tlb=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Program Files\Microsoft Office\Office12\EXCEL.EXE=No
+C:\Windows\System32\mscomctl.OCX=Yes
+C:\Windows\System32\ComDlg32.OCX=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\Windows\System32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\Users\Touchstone\Desktop\CMI-Program - Copy\agregateData.xls=Yes
+
+[Package|Standard Setup Package 1|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 1|Install Locations]
+C:\Users\Touchstone\Desktop\CMI-Program - Copy\CMI.exe=$(AppPath)
+C:\Windows\System32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Windows\System32\oleaut32.dll=$(WinSysPathSysFile)
+C:\Windows\System32\olepro32.dll=$(WinSysPathSysFile)
+C:\Windows\System32\asycfilt.dll=$(WinSysPathSysFile)
+C:\Windows\System32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\mscomctl.OCX=$(WinSysPath)
+C:\Windows\System32\ComDlg32.OCX=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\Windows\System32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Users\Touchstone\Desktop\CMI-Program - Copy\agregateData.xls=$(AppPath)
+
+[Package|Standard Setup Package 1|Configure Shared Files]
+Applicable=Yes
+C:\Users\Touchstone\Desktop\CMI-Program - Copy\CMI.exe=No
+C:\Users\Touchstone\Desktop\CMI-Program - Copy\agregateData.xls=No
+
+[Package|Standard Setup Package 1|Distribution]
+Type=single
+Size=
+Title=CMI
+
+[Package|Standard Setup Package 1|IconGroups]
+Group0=CMI
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|Standard Setup Package 1|CMI]
+Icon1=CMI.exe
+Title1=CMI
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Standard Setup Package 1|Package]
+PackageFolder=C:\Users\Touchstone\Desktop\CMI-Program - Copy\Package
+ProjectFolder=C:\Users\Touchstone\Desktop\CMI-Program - Copy
+ServerSideCab=
+File1=C:\Users\Touchstone\Desktop\CMI-Program - Copy\Package\setup.exe
+File2=C:\Users\Touchstone\Desktop\CMI-Program - Copy\Package\Setup.Lst
+File3=C:\Users\Touchstone\Desktop\CMI-Program - Copy\Package\CMI.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+[Deploy|Folder Deployment 1|Root]
+Package=Standard Setup Package 1
+Handler=PDWizard.FolderDplySubWiz
+Folder=C:\Users\Touchstone\Desktop\CMI-Program - Copy\Install-V0.02
