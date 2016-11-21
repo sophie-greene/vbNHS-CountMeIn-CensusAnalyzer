@@ -1,0 +1,13 @@
+*.layout
+*.exe
+*.o
+*.pdf
+Pckage
+Pckage/*
+Package/*
+Package
+SetupProgram
+SetupProgram/*
+.*
+*~
+!*.*
