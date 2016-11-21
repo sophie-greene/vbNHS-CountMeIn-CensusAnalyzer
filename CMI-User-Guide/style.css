@@ -1,0 +1,104 @@
+@charset "utf-8";
+body  {
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+
+	color: # 9CF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 70%;
+}
+
+/* Tips for this Hybrid layout
+1. Since the side columns em-based sizing is based on the user's default font size, you will want to be sure that background graphics in the columns take that into account. Built correctly, this is more accessible for those that need larger font sizes, since the width of the columns remains proportionate. If this is undesirable with your design, simply change the width to a pixel size and be sure to change the margins on the #mainContent div accordingly.
+2. Since the sizing of side columns in this layout are based on the 100% font size in the body element, if you decrease the text size overall by using a font-size: 80% on the body element or the #container, remember that the column widths will downsize proportionately. You may want to increase their widths, and the size of the #mainContent div's side margins, to compensate for this.
+3. If font sizing is changed in differing amounts on each div instead of on the overall design (ie: #sidebar1 is given a 70% font size and #mainContent is given an 85% font size), this will proportionately change each of the divs overall size. You may want to adjust based on your final font sizing.
+4. The #container div is not necessary for this layout at the 100% width. You may want to use it to create faux columns or limit the width of the layout.
+5. It is not neccessary to have the 100% width on the #container div since, by nature, a div takes up 100% of the available space. It is here so that if you want to decrease the size of the overall container - perhaps leaving a bit of margin on each side - this will already be available for adjustment.
+*/
+.thrColHybHdr #container {
+	width: 780px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 1px solid #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+	padding-top: 10px;
+}  
+.oneColFixCtrHdr #header {
+	background: #DDDDDD; 
+	padding: 0 10px 0 20px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+}
+.thrColHybHdr #header h1 {
+	margin: 0px; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+.thrColHybHdr #mainContent {
+	padding: 0 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+	background: #D2EAEE;
+}
+.thrColHybHdr #footer {
+	padding: 0 10px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	
+}
+.thrColHybHdr	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+
+/* Tips for mainContent:
+1. If you give this #mainContent div a font-size value different than the #sidebar1 div, the margins of the #mainContent div will be based on its font-size and the width of the #sidebar1 div will be based on its font-size. You may wish to adjust the values of these divs.
+2. The space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+3. To avoid float drop, you may need to test to determine the approximate maximum image/element size since this layout is based on the user's font sizing combined with the values you set. However, if the user has their browser font size set lower than normal, less space will be available in the #mainContent div than you may see on testing.
+4. In the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs that may occur.
+*/
+
+.g {
+
+}
+.thrColHybHdr #container #mainContent .g {
+	font-weight: bold;
+	text-align: justify;
+	bgcolor:#9CF;
+	
+}
+.thrColHybHdr #container #mainContent table tr td h1 strong {
+	font-size: medium;
+}
+.thrColHybHdr #container #mainContent table {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: medium;
+	font-style: normal;
+	line-height: normal;
+	left: auto;
+}
+.image {
+	position: absolute;
+	left: 235px;
+	top: 414px;
+}
+.arrow {
+	position: absolute;
+	left: 308px;
+	top: 510px;
+}
+.thrColHybHdr #container #mainContent blockquote blockquote p .g {
+	text-align: center;
+}
+.gg {
+	text-align: right;
+}
+.thrColHybHdr #container #mainContent p {
+	text-align: left;
+}
+.thrColHybHdr #container #mainContent p {
+	font-weight: normal;
+	color: #000;
+	text-align: left;
+}
+.thrColHybHdr #container #mainContent blockquote blockquote .gg {
+	text-align: center;
+	font-weight: bold;
+}
+.thrColHybHdr #container #mainContent ol li {
+	padding-top: 10px;
+	line-height: 1.5;
+}

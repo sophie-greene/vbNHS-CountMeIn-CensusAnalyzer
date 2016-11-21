@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CMIGraph- Technical Guide-First Row Format</title>
+<link href="style.css" rel="stylesheet" type="text/css" /><!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.thrColHybHdr #sidebar1, .thrColHybHdr #sidebar2 { padding-top: 30px; }
+.thrColHybHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+<style type="text/css">
+<!--
+.thrColHybHdr #container #mainContent table {
+	text-align: center;
+}
+.thrColHybHdr #container #mainContent table {
+	text-align: center;
+	border:1;
+}
+-->
+</style>
+</head>
+
+<body class="thrColHybHdr">
+
+<div id="container">
+  <div id="header">
+    <h1><a class="thrColHybHdr">First Row Format</a></h1>
+  <!-- end #header --></div>
+  <div id="mainContent">
+    <p>&nbsp;</p>
+    <ul>
+      <li>A1: number of fields (columns). E.g. for  Ethnicity numbers, we have 1 field</li>
+      <li>B1: Start of data (row number). E.g. in  Ethnicity numbers, the data starts at row number 6</li>
+      <li>C1: End of data (row number). E.g. in Ethnicity numbers,  the data ends at row number 24</li>
+      <li>D1: format of the data. E.g. in ethnicity numbers,  format is # which indicate that data is in integer numbers format.  For a list of formats please refer to the  table below</li>
+    </ul>
+    <table width="636" border="1" align="center" cellpadding="0" cellspacing="0">
+      <tr></tr>
+      <tr>
+        <td width="144" valign="top"><p class="g"><strong>Format</strong></p></td>
+        <td width="352" valign="top"><p class="g"><strong>Description</strong></p></td>
+        <td width="132" valign="top"><p class="g"><strong>Example</strong></p></td>
+      </tr>
+      <tr>
+        <td width="144" valign="top"><h1 class="g"><strong>#</strong></h1></td>
+        <td width="352" valign="top"><blockquote>
+          <p>Integer </p>
+        </blockquote></td>
+        <td width="132" valign="top"><blockquote>
+          <p>345</p>
+        </blockquote></td>
+      </tr>
+      <tr>
+        <td width="144" align="center" valign="top"><p class="g"><strong>#.00%</strong></p></td>
+        <td width="352" align="center" valign="top"><blockquote>
+          <p>Percentage with two decimal numbers</p>
+        </blockquote></td>
+        <td width="132" valign="top"><blockquote>
+          <p>1.09%</p>
+        </blockquote></td>
+      </tr>
+      <tr>
+        <td width="144" valign="top"><p class="g"><strong>@</strong></p></td>
+        <td width="352" valign="top"><blockquote>
+          <p>text</p>
+        </blockquote></td>
+        <td width="132" valign="top"><blockquote>
+          <p>2005</p>
+        </blockquote></td>
+      </tr>
+    </table>
+    <ul>
+      <li>E1: indicates if the data is standardised or not </li>
+    </ul>
+    <table width="68%" border="1" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="29%" valign="top"><p class="g"><strong>Code</strong></p></td>
+        <td width="71%" valign="top"><p class="g"><strong>Description</strong></p></td>
+      </tr>
+      <tr>
+        <td width="29%" valign="top"><p class="g"><strong>std</strong></p></td>
+        <td width="71%" valign="top"><blockquote>
+          <p>Standardised Dataset</p>
+        </blockquote></td>
+      </tr>
+      <tr>
+        <td width="29%" valign="top"><p class="g"><strong>not std </strong></p></td>
+        <td width="71%" valign="top"><blockquote>
+          <p>Non-standardised Dataset</p>
+        </blockquote></td>
+      </tr>
+    </table>
+    <ul>
+      <li>F1: contains relevant notes or any additional  information that needs to be displayed to the program’s user about the data in  the current sheet.</li>
+      <li>G1: contains additional information on the  current data.</li>
+      <li>H1: contains instructions to guide the program  weather to display  primary and main  categories</li>
+    </ul>
+    <table width="640" border="1" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="102" valign="top"><p class="g"><strong>Code</strong></p></td>
+        <td width="388" valign="top"><p class="g"><strong>Description</strong></p></td>
+      </tr>
+      <tr>
+        <td width="102" valign="top"><p class="g"><strong>TRUE</strong></p></td>
+        <td width="388" valign="top"><blockquote>
+          <p> primary and main categories displayed</p>
+        </blockquote></td>
+      </tr>
+      <tr>
+        <td width="102" valign="top"><p class="g"><strong>FALSE</strong></p></td>
+        <td width="388" valign="top"><blockquote>
+          <p> primary and main categories not displayed</p>
+        </blockquote></td>
+      </tr>
+    </table>
+    <h3>&nbsp;</h3>
+  </div>
+	<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
+   <div id="footer">
+<p>&nbsp;</p>
+<div id="footer2">
+  <p>copyright </p>
+  <!-- end #footer -->
+</div>
+<!-- end #container -->
+</div></div>
+</body>
+</html>
